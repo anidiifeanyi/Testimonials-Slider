@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;1,300&display=swap');
+
+:root {
+  --primary: #8e518d;
+  --secondary: #b8b8d1;
+  --light: #daeefb;
+  --dark: #004e64;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  background: var(--light);
+
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+  padding-top: 30px;
+  color: var(--dark);
+}
+
+h5 {
+  padding: 15px 0;
+  color: var(--primary);
+}
+
+.card {
+  background-color: var(--dark);
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.img-pag {
+  display: flex;
+  flex-direction: row;
+}
+
+.img-pag img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-right: 330px;
+}
+
+.pag {
+  padding: 0 25px;
+}
+
+.pag i {
+  color: var(--light);
+  padding: 10px;
+}
+
+.pag i:hover {
+  background-color: var(--secondary);
+  border-radius: 50%;
+}
+
+.customer-name {
+  color: var(--secondary);
+  padding: 7px 0;
+}
+
+.star i {
+  color: var(--primary);
+  padding: 5px 0;
+}
+
+.customer-text {
+  color: var(--light);
+  padding: 3px 0;
+}
+
+
+
+@media only screen and (max-width: 624px) {
+  .card {
+    width: 80%;
+  }
+
+  main {
+    width: 80%;
+  }
+
+}
